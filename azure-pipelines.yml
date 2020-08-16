@@ -5,7 +5,7 @@ variables:
 - name: 'github-organisation'
   value: 'cbchalmers'
 - name: 'github-repository'
-  value: 'Azure-PaaS-WebApp-Container-Wordpress'
+  value: 'Azure-PaaS-WebApp-Docker-Compose-Wordpress'
 
 trigger:
 - master
