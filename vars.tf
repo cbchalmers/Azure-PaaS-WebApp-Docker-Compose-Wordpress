@@ -1,23 +1,29 @@
 variable "resource_location" {
-  type    = string
-  default = "UK South"
+  description  = "Desired location to provision the resources. Eg UK South"
+  type         = string
+#  default = "UK South"
 }
 
 variable "resource_prefix" {
-  type    = string
-  default = "CC-T-UKS"
+  description = "Desired prefix for the provisioned resources. Eg CC-D-UKS"
+  type        = string
+#  default = "CC-D-UKS"
 }
 
 variable "app_service_name" {
-  default = ""
+  description = "Desired external URL. This has to be globally unique to become https://your-app-service-name.azurewebsites.net"
+  type    = string
+#  default = ""
 }
 
 variable "mysql_root_password" {
-  type    = string
-  default = ""
+  description = "Appropriate values which will be used to log into the database service"
+  type        = string
+#  default = ""
 }
 
 variable "mysql_password" {
-  type    = string
-  default = ""
+  description = "Appropriate values which will be used to log into the database service"
+  type        = string
+#  default = ""
 }
